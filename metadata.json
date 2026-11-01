@@ -1,0 +1,6 @@
+{
+  "name": "Kali Linux Command Guide",
+  "description": "Comprehensive, beginner-to-advanced command handbook and interactive learning hub for Kali Linux ethical hacking and cybersecurity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

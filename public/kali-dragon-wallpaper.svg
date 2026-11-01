@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Dark Background Gradients -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#0a1a38" stop-opacity="0.85" />
+      <stop offset="35%" stop-color="#040d20" stop-opacity="0.95" />
+      <stop offset="70%" stop-color="#020612" stop-opacity="1" />
+      <stop offset="100%" stop-color="#010308" stop-opacity="1" />
+    </radialGradient>
+
+    <!-- Dragon Electric Blue to Cyan Gradient -->
+    <linearGradient id="dragonElectric" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="30%" stop-color="#38bdf8" />
+      <stop offset="70%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#00d8ff" />
+    </linearGradient>
+
+    <linearGradient id="dragonWingGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.4" />
+    </linearGradient>
+
+    <linearGradient id="verticalLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0" />
+      <stop offset="25%" stop-color="#00f0ff" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="75%" stop-color="#00f0ff" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Intense Dragon Glow Filters -->
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur1" />
+      <feGaussianBlur stdDeviation="20" result="blur2" />
+      <feGaussianBlur stdDeviation="40" result="blur3" />
+      <feMerge>
+        <feMergeNode in="blur3" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="superGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="30" result="glow" />
+      <feMerge>
+        <feMergeNode in="glow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Deep Midnight Blue to Black Background -->
+  <rect width="1920" height="1080" fill="url(#bgGlow)" />
+
+  <!-- Subtle Cyber Grid Floor / Background Perspective -->
+  <g opacity="0.12" stroke="#00f0ff" stroke-width="0.8">
+    <line x1="0" y1="200" x2="1920" y2="200" />
+    <line x1="0" y1="400" x2="1920" y2="400" />
+    <line x1="0" y1="600" x2="1920" y2="600" />
+    <line x1="0" y1="800" x2="1920" y2="800" />
+    <line x1="0" y1="1000" x2="1920" y2="1000" />
+    <line x1="240" y1="0" x2="240" y2="1080" />
+    <line x1="480" y1="0" x2="480" y2="1080" />
+    <line x1="720" y1="0" x2="720" y2="1080" />
+    <line x1="960" y1="0" x2="960" y2="1080" />
+    <line x1="1200" y1="0" x2="1200" y2="1080" />
+    <line x1="1440" y1="0" x2="1440" y2="1080" />
+    <line x1="1680" y1="0" x2="1680" y2="1080" />
+  </g>
+
+  <!-- Thin Vertical Light Lines (Iconic Kali Wallpaper Theme) -->
+  <g opacity="0.6">
+    <line x1="380" y1="0" x2="380" y2="1080" stroke="url(#verticalLight)" stroke-width="1.5" />
+    <line x1="540" y1="0" x2="540" y2="1080" stroke="url(#verticalLight)" stroke-width="1.0" opacity="0.5" />
+    <line x1="760" y1="0" x2="760" y2="1080" stroke="url(#verticalLight)" stroke-width="2.0" />
+    <line x1="880" y1="0" x2="880" y2="1080" stroke="url(#verticalLight)" stroke-width="1.2" opacity="0.7" />
+    <line x1="1040" y1="0" x2="1040" y2="1080" stroke="url(#verticalLight)" stroke-width="1.2" opacity="0.7" />
+    <line x1="1160" y1="0" x2="1160" y2="1080" stroke="url(#verticalLight)" stroke-width="2.0" />
+    <line x1="1380" y1="0" x2="1380" y2="1080" stroke="url(#verticalLight)" stroke-width="1.0" opacity="0.5" />
+    <line x1="1540" y1="0" x2="1540" y2="1080" stroke="url(#verticalLight)" stroke-width="1.5" />
+  </g>
+
+  <!-- Glowing Particle Embers / Dots -->
+  <g fill="#00f0ff">
+    <circle cx="380" cy="340" r="3" opacity="0.9" filter="url(#neonGlow)" />
+    <circle cx="380" cy="720" r="2.5" opacity="0.8" />
+    <circle cx="540" cy="510" r="2" opacity="0.6" />
+    <circle cx="760" cy="220" r="3.5" opacity="0.9" filter="url(#neonGlow)" />
+    <circle cx="760" cy="880" r="2" opacity="0.7" />
+    <circle cx="880" cy="390" r="2.5" opacity="0.8" />
+    <circle cx="1040" cy="670" r="2.5" opacity="0.8" />
+    <circle cx="1160" cy="280" r="3.5" opacity="0.9" filter="url(#neonGlow)" />
+    <circle cx="1160" cy="810" r="3" opacity="0.8" filter="url(#neonGlow)" />
+    <circle cx="1380" cy="450" r="2" opacity="0.6" />
+    <circle cx="1540" cy="330" r="3" opacity="0.9" filter="url(#neonGlow)" />
+    <circle cx="1540" cy="790" r="2.5" opacity="0.7" />
+  </g>
+
+  <!-- Giant Ambient Backlight Aura for Dragon -->
+  <ellipse cx="960" cy="520" rx="420" ry="340" fill="#00f0ff" opacity="0.12" filter="url(#superGlow)" />
+  <ellipse cx="960" cy="520" rx="280" ry="220" fill="#3b82f6" opacity="0.22" filter="url(#superGlow)" />
+
+  <!-- =========================================================================
+       THE OFFICIAL KALI LINUX SERPENTINE DRAGON EMBLEM
+       Carefully drafted to match the authentic Kali Linux desktop wallpaper dragon
+       ========================================================================= -->
+  <g id="kali-dragon" filter="url(#neonGlow)" transform="translate(960, 520) scale(1.15)">
+    <!-- Dragon Glowing Under-Aura Shadow -->
+    <path d="M -60 -180 C -20 -230 40 -240 90 -210 C 130 -180 140 -120 110 -70 C 80 -20 30 20 60 80 C 90 140 160 160 140 230 C 120 290 40 310 -30 290 C -90 270 -130 200 -100 130 C -80 80 -30 50 -40 -10 C -50 -70 -100 -120 -60 -180 Z"
+          fill="#00f0ff" opacity="0.15" />
+
+    <!-- 1. Left Arched Wing (Broad Razor Swept Blades) -->
+    <path d="M -20 -40
+             C -90 -110 -210 -180 -360 -210
+             C -320 -130 -260 -50 -180 10
+             C -280 -20 -380 0 -440 60
+             C -380 100 -290 150 -160 130
+             C -240 180 -340 230 -380 310
+             C -290 290 -180 250 -90 180
+             C -40 140 -20 60 -20 -40 Z"
+          fill="url(#dragonWingGrad)" stroke="#00f0ff" stroke-width="2" />
+
+    <!-- Left Wing Bone Framework & Ribs -->
+    <path d="M -20 -40 Q -180 -120 -360 -210" stroke="#00f0ff" stroke-width="4" fill="none" />
+    <path d="M -180 -40 Q -300 0 -440 60" stroke="#00f0ff" stroke-width="3" fill="none" />
+    <path d="M -140 50 Q -260 180 -380 310" stroke="#00f0ff" stroke-width="3" fill="none" />
+
+    <!-- 2. Right Swept Wing -->
+    <path d="M 40 -30
+             C 120 -100 240 -160 380 -180
+             C 330 -110 260 -40 190 20
+             C 270 -10 370 20 420 80
+             C 350 120 260 150 150 140
+             C 220 190 310 250 340 320
+             C 260 290 160 250 80 180
+             C 40 130 30 50 40 -30 Z"
+          fill="url(#dragonWingGrad)" stroke="#00f0ff" stroke-width="2" />
+
+    <path d="M 40 -30 Q 200 -100 380 -180" stroke="#00f0ff" stroke-width="4" fill="none" />
+    <path d="M 160 -20 Q 280 20 420 80" stroke="#00f0ff" stroke-width="3" fill="none" />
+    <path d="M 120 60 Q 220 180 340 320" stroke="#00f0ff" stroke-width="3" fill="none" />
+
+    <!-- 3. Serpentine S-Curved Dragon Body & Neck -->
+    <path d="M 0 -160
+             C 50 -180 90 -160 90 -110
+             C 90 -50 20 -20 10 40
+             C 0 100 80 140 80 200
+             C 80 260 0 290 -40 270
+             C -90 250 -90 180 -50 120
+             C -10 60 -10 -20 -30 -70
+             C -50 -120 -40 -150 0 -160 Z"
+          fill="url(#dragonElectric)" stroke="#ffffff" stroke-width="1.5" />
+
+    <!-- 4. Dorsal Spine Fins & Blade Spikes along S-Curve -->
+    <path d="M 0 -160 L 20 -200 L 15 -165 Z" fill="#ffffff" />
+    <path d="M 35 -150 L 65 -185 L 45 -145 Z" fill="#ffffff" />
+    <path d="M 70 -130 L 110 -160 L 80 -120 Z" fill="#ffffff" />
+    <path d="M 90 -95 L 135 -115 L 95 -80 Z" fill="#ffffff" />
+    <path d="M 80 -50 L 125 -60 L 75 -35 Z" fill="#ffffff" />
+    <path d="M 50 0 L 95 -5 L 45 15 Z" fill="#ffffff" />
+    <path d="M 30 50 L 75 55 L 25 70 Z" fill="#ffffff" />
+    <path d="M 60 120 L 110 135 L 55 140 Z" fill="#ffffff" />
+    <path d="M 80 180 L 130 205 L 75 200 Z" fill="#ffffff" />
+    <path d="M 60 240 L 105 270 L 45 255 Z" fill="#ffffff" />
+
+    <!-- 5. Sculpted Predatory Dragon Head -->
+    <g id="dragon-head">
+      <!-- Head Skull Base -->
+      <path d="M -30 -160
+               C -50 -200 -30 -250 20 -260
+               C 60 -270 90 -230 70 -190
+               C 90 -200 130 -190 140 -160
+               C 150 -130 110 -120 70 -130
+               C 30 -140 -10 -140 -30 -160 Z"
+            fill="url(#dragonElectric)" stroke="#ffffff" stroke-width="1.5" />
+
+      <!-- Back-Swept Horns -->
+      <path d="M 10 -250 C 40 -320 120 -370 180 -400 C 140 -330 90 -280 40 -240 Z" fill="#00f0ff" />
+      <path d="M 50 -230 C 90 -290 160 -330 220 -350 C 180 -290 120 -250 70 -210 Z" fill="#38bdf8" />
+      <path d="M -10 -230 C -20 -290 10 -340 50 -380 C 20 -320 0 -275 0 -220 Z" fill="#00f0ff" opacity="0.8" />
+
+      <!-- Jaws & Snout -->
+      <path d="M 50 -170 L 150 -150 L 110 -135 L 50 -150 Z" fill="#ffffff" />
+      <path d="M 60 -135 L 135 -125 L 90 -115 L 45 -125 Z" fill="#00f0ff" />
+
+      <!-- Glowing Cyan Dragon Eye -->
+      <ellipse cx="45" cy="-185" rx="9" ry="5" transform="rotate(-20 45 -185)" fill="#ffffff" filter="url(#superGlow)" />
+      <ellipse cx="45" cy="-185" rx="5" ry="2" transform="rotate(-20 45 -185)" fill="#00f0ff" />
+    </g>
+
+    <!-- 6. Barbed Serpentine Whip Tail & Spade Tip -->
+    <path d="M -40 270
+             C -80 330 -40 400 30 430
+             C 100 460 160 410 140 350
+             C 120 300 40 330 10 360
+             C -20 380 0 420 40 430
+             C 90 440 120 400 100 370"
+          stroke="#00f0ff" stroke-width="6" stroke-linecap="round" fill="none" />
+
+    <!-- Terminal Arrowhead Spade on Tail -->
+    <polygon points="100,360 135,335 125,375" fill="#ffffff" />
+    <polygon points="100,360 85,395 115,385" fill="#00f0ff" />
+
+    <!-- 7. Grasping Fore-Talons -->
+    <g stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round">
+      <path d="M -40 20 L -80 50 L -110 40" />
+      <path d="M -80 50 L -115 65" />
+      <path d="M -80 50 L -100 85" />
+    </g>
+  </g>
+</svg>
